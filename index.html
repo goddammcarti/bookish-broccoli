@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            background: rgb(206, 206, 206);
+            height: 100%;
+            
+            
+            
+        }
+        .central-block{
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            grid-template-columns: repeat(auto-fit, 160px);
+            display: grid;
+            grid-gap: 100px;
+        }
+        .block-for-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        .subscribe{
+            height: 20px;
+            width: 90px;
+            background-color: rgb(185, 45, 45);
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+            text-align: center;
+        }
+        .box-subscribe{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .secret{
+            color: white;
+        }
+        .sub{
+            background-color: rgb(224, 40, 34);
+            border: none;
+            color: white;
+            padding:4px 30px 4px 30px ;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block-for-flex">
+    <div class="central-block">
+        <section>
+            <h5>First name</h5>
+            <input type="text" placeholder="Jake">
+            
+        </section>
+        <section>
+            <h5>Last name</h5>
+            <input type="text" placeholder="The Dog" >
+        </section>
+        <section>
+            <h5>Email</h5>
+            <input type="email" placeholder="jakehomeless@gmail.com">
+        </section>
+        <section>
+            <h5 class="secret">j</h5>
+            <input class="sub" type="submit" placeholder="Subscribe">
+        </section>
+    </div>
+</div>
+</body>
+</html>
